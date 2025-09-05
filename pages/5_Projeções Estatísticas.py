@@ -230,7 +230,7 @@ if tipo == opcoes[1]:
         {
             "titulo": "Relação Tratado/Produzido",
             "%cor": "#0D47A1",
-            "valor": formatar_numero_percentual(rel_tratado_coletado),
+            "valor": formatar_numero_percentual(rel_tratado_produzido),
             "bg": "#E3F2FD",
         },
     ]
