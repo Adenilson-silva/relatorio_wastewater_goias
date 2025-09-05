@@ -2,4 +2,4 @@
 
 Mais informações: https://relatoriogoias.streamlit.app/
 
-Para melhor visualização, recomenda-se acesso por computador ou dispositivos móveis atualizados.
+Recomenda-se acesso por computador.
