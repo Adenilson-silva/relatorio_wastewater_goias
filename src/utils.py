@@ -1,25 +1,37 @@
 import streamlit as st
 
 def aviso_horizontal_mobile(largura_limite=600, mensagem="📱 Para melhor visualização, vire seu celular para a horizontal!"):
-    st.markdown(f"""
+    js_code = f"""
     <div id="mobile-warning" style="display:none; color:red; font-weight:bold; text-align:center;">
-    {mensagem}
+        {mensagem}
     </div>
 
     <script>
-    function checkWidth() {{
-        var w = window.innerWidth;
-        var warning = document.getElementById('mobile-warning');
-        if(w < {largura_limite}){{
-            warning.style.display = "block";
-        }} else {{
-            warning.style.display = "none";
+    (function() {{
+        function checkWidth() {{
+            var w = window.innerWidth;
+            var warning = document.getElementById('mobile-warning');
+            if (w < {largura_limite}) {{
+                warning.style.display = "block";
+            }} else {{
+                warning.style.display = "none";
+            }}
         }}
-    }}
-    window.addEventListener('resize', checkWidth);
-    checkWidth();
+
+        // Executa a função na primeira vez
+        checkWidth();
+
+        // Monitora redimensionamentos da janela
+        window.addEventListener('resize', checkWidth);
+
+        // Usa MutationObserver para garantir que o script seja re-executado
+        // se o Streamlit atualizar partes do DOM
+        var observer = new MutationObserver(checkWidth);
+        observer.observe(document.body, {{ childList: true, subtree: true }});
+    }})();
     </script>
-    """, unsafe_allow_html=True)
+    """
+    st.markdown(js_code, unsafe_allow_html=True)
 
 def titulo_relatorio():
     aviso_horizontal_mobile()
