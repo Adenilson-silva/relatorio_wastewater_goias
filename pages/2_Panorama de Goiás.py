@@ -8,11 +8,12 @@ from src.utils import (
     criar_cards, 
     titulo_relatorio, 
     formatar_numero_inteiro,
-    formatar_numero_decimal
+    formatar_numero_decimal,
+    sobre_autor
 )
 
 st.set_page_config(
-    layout="centered"
+    layout="wide"
 )
 
 df_volumes_anuais_goias = obter_volumes_anuais_goias().sort_values(by="Ano")
@@ -135,7 +136,8 @@ st.plotly_chart(fig_relacao, use_container_width=True)
 ano_selecionados = st.multiselect(
         "Selecione o(s) Ano(s) de Referência",
         anos,
-        anos[0]
+        anos[0],
+        placeholder='Anos'
     )
 if len(ano_selecionados) < 1:
         st.warning("Selecione o(s) Ano(s) de Referência.")
@@ -202,3 +204,5 @@ st.sidebar.markdown(
     """
 )
 
+
+sobre_autor()

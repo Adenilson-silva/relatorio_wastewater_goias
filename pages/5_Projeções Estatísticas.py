@@ -8,11 +8,12 @@ from src.utils import (
     criar_cards, 
     titulo_relatorio,
     formatar_numero_decimal,
-    formatar_numero_percentual
+    formatar_numero_percentual,
+    sobre_autor
 )
 
 st.set_page_config(
-    layout="centered"
+    layout="wide"
 )
 
 (modelo_poli_produzido, feature_poli_produzido), \
@@ -254,5 +255,6 @@ st.sidebar.markdown(
     """
 )
 
+sobre_autor()
 
 

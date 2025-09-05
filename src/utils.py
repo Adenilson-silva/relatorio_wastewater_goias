@@ -35,6 +35,15 @@ def titulo_relatorio():
         unsafe_allow_html=True
     )
 
+def sobre_autor():
+    st.sidebar.title("Autor")
+    st.sidebar.markdown(
+        """
+        **Adenilson Silva**  
+        [LinkedIn](https://www.linkedin.com/in/adenilson-silva/)
+        """
+    )
+
 def criar_cards(cards, n_colunas):
         cols = st.columns(n_colunas)
         for col, card in zip(cols, cards):

@@ -1,12 +1,14 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-from src.utils import titulo_relatorio
+from src.utils import (
+    titulo_relatorio,
+    sobre_autor
+)
 
 st.set_page_config(
-    layout="centered"
-)
-    
+    layout="wide"
+)   
 titulo_relatorio()
 st.markdown("") 
 

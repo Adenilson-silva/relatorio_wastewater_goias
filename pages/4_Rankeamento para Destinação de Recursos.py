@@ -3,10 +3,13 @@ from src.db import (
     obter_ranking_melhorias, 
     obter_ranking_novas_obras
 )
-from src.utils import titulo_relatorio
+from src.utils import (
+    titulo_relatorio,
+    sobre_autor
+)
 
 st.set_page_config(
-    layout="centered"
+    layout="wide"
 )
 
 df_ranking_melhorias = obter_ranking_melhorias().sort_values(by="Posição")
@@ -134,6 +137,6 @@ st.sidebar.markdown(
     """
 )
 
-
+sobre_autor()
 
 

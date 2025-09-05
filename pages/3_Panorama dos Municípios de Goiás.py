@@ -10,12 +10,13 @@ from src.db import (
 from src.utils import (
     criar_cards, titulo_relatorio, 
     formatar_numero_inteiro,
-    formatar_numero_decimal
+    formatar_numero_decimal,
+    sobre_autor
 )
 from src.geodata_utils import carregar_municipios_goias_para_mapa
 
 st.set_page_config(
-    layout="centered"
+    layout="wide"
 )
 
 df_volumes_anuais = obter_volumes_anuais_municipios().sort_values(by="Ano")
@@ -62,7 +63,8 @@ if tipo == opcoes[0]:
         "Selecione o Município",
         municipios,
         key="municipio1",
-        on_change = sinc_municipio1
+        on_change = sinc_municipio1,
+        placeholder='Municípios'
     )
     if len(municipio_selecionado) > 1:
         st.warning("Selecione apenas um município.")
@@ -197,7 +199,8 @@ if tipo == opcoes[0]:
             "Município Selecionado",
             municipios,
             key="municipio2",
-            on_change = sinc_municipio2
+            on_change = sinc_municipio2,
+            placeholder='Municípios'
         )
         if st.session_state.municipio1 != st.session_state.municipio2:
             st.session_state.municipio1 = st.session_state.municipio2
@@ -245,7 +248,7 @@ if tipo == opcoes[1]:
                 index=0
             )
     if ano_selecionado2 == "":
-        st.warning("Selecione um ano para visualizar os dados.")
+        st.warning("Selecione um ano para visualizar o mapa.")
     else:
         with st.spinner("Carregando o mapa, isso pode levar alguns segundos... Por favor, aguarde!"):
             gdf = carregar_municipios_goias_para_mapa()
@@ -355,6 +358,8 @@ st.sidebar.markdown(
     Um **mapa interativo** permite ver todos os municípios de Goiás de forma visual, com cores que indicam o desempenho e informações detalhadas ao passar o mouse, incluindo população, volumes de esgoto e rankings. Assim, é fácil comparar municípios e acompanhar a evolução dos serviços de saneamento.
     """
 )
+
+sobre_autor()
 
 
 
