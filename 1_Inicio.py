@@ -34,7 +34,7 @@ st.markdown("""
             
     Este novo projeto além de aprimorar as visualizações, também integra a capacidade de fazer previsões, fornecendo uma ferramenta mais completa para o monitoramento quantitativo de efluentes em Goiás.
     
-    Recomenda-se acesso por computador.
+    Não é recomendado o acesso por dispositivos móveis.
     """)
 
 sobre_autor()
