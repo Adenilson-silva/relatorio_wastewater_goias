@@ -30,7 +30,7 @@ st.markdown("""
     * **Panorama de Goiás** 
     * **Panorama dos Municípios** 
     * **Rankeamento para Destinação de Recursos** 
-    * **Projeções Estatísticas** 
+    * **Projeção Baseada em Modelos Polinomiais** 
             
     Este novo projeto além de aprimorar as visualizações, também integra a capacidade de fazer previsões, fornecendo uma ferramenta mais completa para o monitoramento quantitativo de efluentes em Goiás.
     
