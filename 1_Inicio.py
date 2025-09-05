@@ -7,7 +7,7 @@ from src.utils import (
 )
 
 st.set_page_config(
-    layout="wide"
+    layout="centered"
 )   
 titulo_relatorio()
 st.markdown("") 
@@ -35,10 +35,4 @@ st.markdown("""
     Este novo projeto além de aprimorar as visualizações, também integra a capacidade de fazer previsões, fornecendo uma ferramenta mais completa para o monitoramento quantitativo de efluentes em Goiás.
     """)
 
-st.sidebar.title("Autor")
-st.sidebar.markdown(
-    """
-    **Adenilson Silva**  
-    [LinkedIn](https://www.linkedin.com/in/adenilson-silva/)
-    """
-)
+sobre_autor()

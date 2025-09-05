@@ -13,7 +13,7 @@ from src.utils import (
 )
 
 st.set_page_config(
-    layout="wide"
+    layout="centered"
 )
 
 (modelo_poli_produzido, feature_poli_produzido), \

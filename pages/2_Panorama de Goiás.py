@@ -13,7 +13,7 @@ from src.utils import (
 )
 
 st.set_page_config(
-    layout="wide"
+    layout="centered"
 )
 
 df_volumes_anuais_goias = obter_volumes_anuais_goias().sort_values(by="Ano")
@@ -203,6 +203,5 @@ st.sidebar.markdown(
     Assim, é possível avaliar tanto a evolução do estado ao longo das décadas quanto a distribuição da qualidade do serviço em um ano específico.
     """
 )
-
 
 sobre_autor()
