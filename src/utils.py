@@ -1,6 +1,6 @@
 import streamlit as st
 
-def aviso_horizontal_mobile(largura_limite=600, mensagem="📱 Para melhor visualização, vire seu celular para a horizontal!"):
+def aviso_horizontal_mobile(largura_limite=600, mensagem="📱 Para melhor visualização, deixe o seu horizontal!"):
     st.markdown(f"""
     <style>
     .mobile-warning {{
