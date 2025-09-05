@@ -1,6 +1,28 @@
 import streamlit as st
 
+def aviso_horizontal_mobile(largura_limite=600, mensagem="📱 Para melhor visualização, vire seu celular para a horizontal!"):
+    st.markdown(f"""
+    <div id="mobile-warning" style="display:none; color:red; font-weight:bold; text-align:center;">
+    {mensagem}
+    </div>
+
+    <script>
+    function checkWidth() {{
+        var w = window.innerWidth;
+        var warning = document.getElementById('mobile-warning');
+        if(w < {largura_limite}){{
+            warning.style.display = "block";
+        }} else {{
+            warning.style.display = "none";
+        }}
+    }}
+    window.addEventListener('resize', checkWidth);
+    checkWidth();
+    </script>
+    """, unsafe_allow_html=True)
+
 def titulo_relatorio():
+    aviso_horizontal_mobile()
     st.markdown(
         """
         <div style="
@@ -45,4 +67,6 @@ def formatar_numero_percentual(numero, casas=2):
     numero_formatado = formato.format(numero*100)
     numero_formatado = f"{numero_formatado.replace(",", "X").replace(".", ",").replace("X", ".")}%"
     return numero_formatado
+
+
 
