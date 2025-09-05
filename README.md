@@ -6,4 +6,4 @@ Este trabalho é uma evolução e ramificação de dois projetos anteriores:
 
 Mais informações: https://relatoriogoias.streamlit.app/
 
-Recomenda-se acesso por computador.
+Recomenda-se que o relatório seja acessado por computador.
