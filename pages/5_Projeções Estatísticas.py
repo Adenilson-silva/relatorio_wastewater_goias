@@ -190,7 +190,7 @@ if tipo == opcoes[1]:
     ano_tratado = feature_poli_tratado.transform(np.array([[ano_selecionado]]))
     y_pred_tratado = modelo_poli_tratado.predict(ano_tratado)[0]
 
-    rel_coletado_produzido=y_pred_coletado/y_pred_coletado
+    rel_coletado_produzido=y_pred_coletado/y_pred_produzido
     rel_tratado_coletado=y_pred_tratado/y_pred_coletado
     rel_tratado_produzido=y_pred_tratado/y_pred_produzido
 
@@ -214,7 +214,6 @@ if tipo == opcoes[1]:
             "bg": "#F5F5F5",
         },
     ]
-
     cards_linha2 = [
         {
             "titulo": "Relação Coletado/Produzido",

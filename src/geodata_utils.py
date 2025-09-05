@@ -14,7 +14,7 @@ def carregar_shapefile(nome_arquivo: str, pasta: str = "geodata"):
 
 @st.cache_data(ttl=600) 
 def carregar_municipios_goias() -> gpd.GeoDataFrame:
-    nome_arquivo = "GO\\GO_Municipios_2024.shp"
+    nome_arquivo = "GO/GO_Municipios_2024.shp"
     nome_arquivo
     gdf = carregar_shapefile(nome_arquivo)
     return gdf[['CD_MUN','geometry']]
