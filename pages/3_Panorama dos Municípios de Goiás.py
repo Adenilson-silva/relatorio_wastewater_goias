@@ -14,6 +14,10 @@ from src.utils import (
 )
 from src.geodata_utils import carregar_municipios_goias_para_mapa
 
+st.set_page_config(
+    layout="wide"
+)
+
 df_volumes_anuais = obter_volumes_anuais_municipios().sort_values(by="Ano")
 df_municipios = obter_municipios().sort_values(by="Nome do Município")
 df_ranking_melhorias = obter_ranking_melhorias()

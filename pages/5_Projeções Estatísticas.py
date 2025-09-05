@@ -11,6 +11,10 @@ from src.utils import (
     formatar_numero_percentual
 )
 
+st.set_page_config(
+    layout="wide"
+)
+
 (modelo_poli_produzido, feature_poli_produzido), \
 (modelo_poli_coletado, feature_poli_coletado), \
 (modelo_poli_tratado, feature_poli_tratado) = carregar_todos_modelos()

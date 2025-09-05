@@ -11,6 +11,10 @@ from src.utils import (
     formatar_numero_decimal
 )
 
+st.set_page_config(
+    layout="wide"
+)
+
 df_volumes_anuais_goias = obter_volumes_anuais_goias().sort_values(by="Ano")
 df_desempenho_municipios = obter_desempenho_municipios().sort_values(by="Ano", ascending=False)
 anos = df_desempenho_municipios["Ano"].value_counts().index.tolist()
