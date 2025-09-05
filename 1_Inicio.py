@@ -4,7 +4,7 @@ import plotly.express as px
 from src.utils import titulo_relatorio
 
 st.set_page_config(
-    layout="wide"
+    layout="centered"
 )
     
 titulo_relatorio()

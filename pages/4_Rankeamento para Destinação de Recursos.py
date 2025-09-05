@@ -6,7 +6,7 @@ from src.db import (
 from src.utils import titulo_relatorio
 
 st.set_page_config(
-    layout="wide"
+    layout="centered"
 )
 
 df_ranking_melhorias = obter_ranking_melhorias().sort_values(by="Posição")

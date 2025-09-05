@@ -12,7 +12,7 @@ from src.utils import (
 )
 
 st.set_page_config(
-    layout="wide"
+    layout="centered"
 )
 
 df_volumes_anuais_goias = obter_volumes_anuais_goias().sort_values(by="Ano")
@@ -48,7 +48,7 @@ fig_volume = px.line(
     markers=True,
     title="Volumes de Esgotos Tratados, Coletados e Produzidos",
     width=1000,
-    height=500,
+    height=400,
     color_discrete_map={
         "Volume produzido (1000 m³)": "#A0522D",  
         "Volume coletado (1000 m³)": "#D3DC5A",   
