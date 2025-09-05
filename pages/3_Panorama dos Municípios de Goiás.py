@@ -25,6 +25,7 @@ municipios = df_municipios["Município_Código"].value_counts().index.tolist()
 total_municipios = len(municipios)
 anos = df_volumes_anuais["Ano"].value_counts().sort_index(ascending=False).index.tolist()
 
+
 def sinc_municipio1():
     st.session_state.municipio2 = st.session_state.municipio1
 def sinc_municipio2():
@@ -191,7 +192,6 @@ if tipo == opcoes[0]:
             st.multiselect(
             "Município Selecionado",
             municipios,
-            default= municipio_selecionado,
             key="municipio2",
             on_change = sinc_municipio2
         )
