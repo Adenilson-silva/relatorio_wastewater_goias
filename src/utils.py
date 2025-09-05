@@ -39,8 +39,7 @@ def sobre_autor():
     st.sidebar.title("Autor")
     st.sidebar.markdown(
         """
-        **Adenilson Silva**  
-        [LinkedIn](https://www.linkedin.com/in/adenilson-silva/)
+        **[Adenilson Silva](https://www.linkedin.com/in/adenilson-silva/)**
         """
     )
 
