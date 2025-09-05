@@ -1,0 +1,26 @@
+# Variáveis de ambiente
+.env
+
+# Configurações do Streamlit
+.streamlit/secrets.toml
+
+# Pastas de cache do Python
+__pycache__/
+*.pyc
+
+# Ambiente virtual
+venv/
+env/
+
+# Arquivos de log
+*.log
+
+# Modelos grandes (se necessário)
+#models/*.pkl
+
+# Dados pesados
+#data/
+#geodata/
+
+# Ignorar checkpoints do Jupyter Notebook
+.ipynb_checkpoints/

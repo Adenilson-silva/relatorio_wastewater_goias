@@ -1,0 +1,18 @@
+Passo a passo para criar o banco PostgreSQL
+
+- Acessar o Portal do Azure
+- Clique em criar um recurso
+- Pesquisar por Azure Database for PosgreSQL Flexible Server
+- Clique em criar
+- Selecione a assinatura 
+- Crie um grupo de recursos
+- Insira um nome para o servidor
+- Selecione a região
+- Selecione o tipo de carga de trabalho como "Desenvolvimento"
+- Defina o administrador
+- Defina o Logon e a senha do administrador
+- Não altere os demais campos
+- Clique em avançar
+- Em Regras de Firewall adicione o IP do Cliente atual
+- Clique em revisar e criar
+- Clique em criar
