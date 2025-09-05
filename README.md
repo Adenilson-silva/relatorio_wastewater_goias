@@ -5,4 +5,5 @@ Este trabalho é uma evolução e ramificação de dois projetos anteriores:
 - Uso de Dados para Otimizar a Alocação de Recursos Públicos Destinados ao Saneamento Básico de Goiás
 
 Mais informações: https://relatoriogoias.streamlit.app/
+
 Recomenda-se acesso por computador.
