@@ -31,7 +31,6 @@ def get_engine():
     azure_engine = create_engine(f'postgresql://{user_azure}:{password_azure}@{host_azure}:{port_azure}/{dbname_azure}')
     return azure_engine
 
-# Cache para consultas (boa prática no Streamlit)
 @st.cache_data(ttl=600) 
 def query_to_df(sql: str) -> pd.DataFrame:
     engine = get_engine()
