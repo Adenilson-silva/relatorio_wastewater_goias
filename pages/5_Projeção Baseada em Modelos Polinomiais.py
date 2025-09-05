@@ -31,7 +31,7 @@ st.markdown(
         padding: 2px;
         text-align: center;
         font-family: 'Cambria Math';">
-        <p style="font-size:25px; font-weight: bold;">Projeção baseada em modelos polinomiais (2022–2032)</p>
+        <p style="font-size:25px; font-weight: bold;">Projeção Baseada em Modelos Polinomiais (2022–2032)</p>
     </div>
     """,
     unsafe_allow_html=True
