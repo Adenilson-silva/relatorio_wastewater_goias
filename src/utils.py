@@ -29,7 +29,7 @@ def titulo_relatorio():
             padding: 2px;
             text-align: center;
             font-family: 'Cambria Math';">
-            <h3>USO DE DADOS (QUANTITATIVOS) PARA OTIMIZAR A ALOCAÇÃO DE RECURSOS DESTINADOS AO SANEAMENTO BÁSICO DE GOIÁS</h3> 
+            <h3>USO DE DADOS (VOLUMÉTRICOS) PARA OTIMIZAR A ALOCAÇÃO DE RECURSOS DESTINADOS AO SANEAMENTO BÁSICO DE GOIÁS</h3> 
         </div>
         """,
         unsafe_allow_html=True
