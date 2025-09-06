@@ -7,8 +7,10 @@ from src.utils import (
 )
 
 st.set_page_config(
-    layout="centered"
-)   
+    layout="centered",
+    initial_sidebar_state="expanded"
+)
+
 titulo_relatorio()
 st.markdown("") 
 
