@@ -47,7 +47,7 @@ def query_to_df(sql: str) -> pd.DataFrame:
         print(f"[ERRO] Falha no query_to_df: {e}")
 
         # Retorna um DataFrame vazio para evitar quebra no app
-        return pd.DataFrame()
+        #return pd.DataFrame()
 
 
 @st.cache_data(ttl=600) 
