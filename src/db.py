@@ -40,6 +40,7 @@ def query_to_df(sql: str) -> pd.DataFrame:
     
     except Exception as e:
         # Exibe erro no Streamlit
+        st.error(f"Não foi possível recuperar os dados do relatório")
         st.error(f"Erro ao executar a query: {e}")
         
         # Opcional: log no terminal
