@@ -31,11 +31,23 @@ def get_engine():
     azure_engine = create_engine(f'postgresql://{user_azure}:{password_azure}@{host_azure}:{port_azure}/{dbname_azure}')
     return azure_engine
 
-@st.cache_data(ttl=600) 
+@st.cache_data(ttl=600)
 def query_to_df(sql: str) -> pd.DataFrame:
-    engine = get_engine()
-    df = pd.read_sql(sql, engine)
-    return df
+    try:
+        engine = get_engine()
+        df = pd.read_sql(sql, engine)
+        return df
+    
+    except Exception as e:
+        # Exibe erro no Streamlit
+        st.error(f"Erro ao executar a query: {e}")
+        
+        # Opcional: log no terminal
+        print(f"[ERRO] Falha no query_to_df: {e}")
+
+        # Retorna um DataFrame vazio para evitar quebra no app
+        return pd.DataFrame()
+
 
 @st.cache_data(ttl=600) 
 def obter_volumes_anuais_goias() -> pd.DataFrame:

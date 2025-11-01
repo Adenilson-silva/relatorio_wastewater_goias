@@ -9,8 +9,9 @@ __pycache__/
 *.pyc
 
 # Ambiente virtual
-venv/
+.venv/
 env/
+notebooks/
 
 # Arquivos de log
 *.log
