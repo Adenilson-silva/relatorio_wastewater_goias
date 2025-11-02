@@ -1,0 +1,247 @@
+Posição;id_municipio;Nome do município;Código IBGE
+1;1202;São Luís de Montes Belos;5220108
+2;1141;Nerópolis;5214507
+3;992;Alexânia;5200308
+4;1095;Ipameri;5210109
+5;1169;Pirenópolis;5217302
+6;1103;Itapaci;5210901
+7;1089;Hidrolândia;5209705
+8;1207;São Simão;5220405
+9;1050;Cocalzinho de Goiás;5205513
+10;1007;Aragarças;5201702
+11;1072;Flores de Goiás;5207907
+12;1057;Crixás;5206404
+13;1137;Mozarlândia;5214002
+14;1093;Indiara;5209952
+15;1153;Orizona;5215306
+16;1125;Maurilândia;5213004
+17;1200;São João d'Aliança;5220009
+18;1091;Iaciara;5209903
+19;1227;Vianópolis;5222005
+20;1071;Firminópolis;5207808
+21;1198;São Domingos;5219803
+22;1145;Nova Crixás;5214838
+23;1036;Campinorte;5204706
+24;1015;Barro Alto;5203203
+25;1053;Corumbá de Goiás;5205802
+26;1076;Goianápolis;5208400
+27;1179;Rialma;5218607
+28;1008;Aragoiânia;5201801
+29;1041;Carmo do Rio Verde;5205000
+30;1165;Petrolina de Goiás;5216809
+31;1149;Nova Veneza;5215009
+32;1168;Piranhas;5217203
+33;1019;Bonfinópolis;5203559
+34;1045;Cavalcante;5205307
+35;1140;Nazário;5214408
+36;1121;Mambaí;5212709
+37;1190;Santa Rita do Araguaia;5219407
+38;1228;Vicentinópolis;5222054
+39;1017;Bom Jardim de Goiás;5203401
+40;1047;Cezarina;5205455
+41;1130;Monte Alegre de Goiás;5213509
+42;1209;Serranópolis;5220504
+43;1194;Santa Terezinha de Goiás;5219704
+44;1026;Cabeceiras;5204003
+45;1038;Campo Limpo de Goiás;5204854
+46;1146;Nova Glória;5214861
+47;1037;Campo Alegre de Goiás;5204805
+48;995;Alto Paraíso de Goiás;5200605
+49;1118;Leopoldo de Bulhões;5212303
+50;1106;Itarumã;5211305
+51;1065;Doverlândia;5207253
+52;1211;Simolândia;5220686
+53;1155;Ouvidor;5215504
+54;994;Alto Horizonte;5200555
+55;1185;Santa Bárbara de Goiás;5219100
+56;1196;Santo Antônio de Goiás;5219738
+57;1069;Faina;5207535
+58;1229;Vila Boa;5222203
+59;1092;Inaciolândia;5209937
+60;1199;São Francisco de Goiás;5219902
+61;998;Americano do Brasil;5200852
+62;1083;Gouvelândia;5209150
+63;1110;Jandaia;5211701
+64;1230;Vila Propício;5222302
+65;989;Água Fria de Goiás;5200175
+66;1077;Goiandira;5208509
+67;1187;Santa Fé de Goiás;5219258
+68;1070;Fazenda Nova;5207600
+69;1220;Turvelândia;5221551
+70;1014;Baliza;5203104
+71;1203;São Luiz do Norte;5220157
+72;1101;Itaguaru;5210604
+73;1044;Caturaí;5205208
+74;1195;Santo Antônio da Barra;5219712
+75;1180;Rianápolis;5218706
+76;1064;Divinópolis de Goiás;5208301
+77;1100;Itaguari;5210562
+78;1152;Novo Planalto;5215256
+79;1020;Bonópolis;5203575
+80;1138;Mundo Novo;5214051
+81;1133;Montividiu do Norte;5213772
+82;1219;Turvânia;5221502
+83;1102;Itajá;5210802
+84;1104;Itapirapuã;5211008
+85;1124;Matrinchã;5212956
+86;1005;Aporé;5201504
+87;1136;Mossâmedes;5213905
+88;1205;São Miguel do Passa Quatro;5220264
+89;1074;Formoso;5208103
+90;1175;Portelândia;5218102
+91;1174;Porteirão;5218052
+92;1075;Gameleira de Goiás;5208152
+93;1033;Caldazinha;5204557
+94;997;Amaralina;5200829
+95;1226;Varjão;5221908
+96;1189;Santa Isabel;5219357
+97;1021;Brazabrantes;5203609
+98;1086;Guarani de Goiás;5209408
+99;1139;Mutunópolis;5214101
+100;1088;Heitoraí;5209606
+101;1154;Ouro Verde de Goiás;5215405
+102;1066;Edealina;5207352
+103;1034;Campestre de Goiás;5204607
+104;1035;Campinaçu;5204656
+105;1160;Palminópolis;5215900
+106;1214;Teresina de Goiás;5221080
+107;1213;Taquaral de Goiás;5221007
+108;1218;Trombas;5221452
+109;1157;Palestina de Goiás;5215652
+110;1058;Cromínia;5206503
+111;1090;Hidrolina;5209804
+112;1042;Castelândia;5205059
+113;1191;Santa Rita do Novo Destino;5219456
+114;1051;Colinas do Sul;5205521
+115;1060;Damianópolis;5206701
+116;1025;Buritinópolis;5203962
+117;1068;Estrela do Norte;5207501
+118;1177;Professor Jamil;5218391
+119;1148;Nova Roma;5214903
+120;1193;Santa Tereza de Goiás;5219605
+121;1164;Perolândia;5216452
+122;1224;Urutaí;5221809
+123;1212;Sítio d'Abadia;5220702
+124;999;Amorinópolis;5200902
+125;1012;Aurilândia;5202601
+126;1056;Cristianópolis;5206305
+127;1061;Damolândia;5206800
+128;1147;Nova Iguaçu de Goiás;5214879
+129;1096;Ipiranga de Goiás;5210158
+130;1113;Jaupaci;5212006
+131;1216;Três Ranchos;5221304
+132;1221;Uirapuru;5221577
+133;1059;Cumari;5206602
+134;1186;Santa Cruz de Goiás;5219209
+135;1150;Novo Brasil;5215207
+136;1098;Israelândia;5210307
+137;1161;Panamá;5216007
+138;988;Adelândia;5200159
+139;1114;Jesúpolis;5212055
+140;1063;Diorama;5207105
+141;1024;Buriti de Goiás;5203939
+142;1010;Arenópolis;5202353
+143;1013;Avelinópolis;5202809
+144;1159;Palmelo;5215801
+145;1143;Nova América;5214705
+146;1120;Mairipotaba;5212600
+147;1109;Ivolândia;5211602
+148;1123;Marzagão;5212907
+149;1052;Córrego do Ouro;5205703
+150;1144;Nova Aurora;5214804
+151;1135;Morro Agudo de Goiás;5213855
+152;1192;Santa Rosa de Goiás;5219506
+153;1166;Pilar de Goiás;5216908
+154;1062;Davinópolis;5206909
+155;1206;São Patrício;5220280
+156;993;Aloândia;5200506
+157;1085;Guaraíta;5209291
+158;990;Água Limpa;5200209
+159;1087;Guarinos;5209457
+160;1040;Campos Verdes;5204953
+161;1129;Moiporá;5213400
+162;1028;Cachoeira de Goiás;5204201
+163;1001;Anhanguera;5201207
+164;1208;Senador Canedo;5220454
+165;1223;Uruana;5221700
+166;1119;Luziânia;5212501
+167;1023;Buriti Alegre;5203906
+168;1111;Jaraguá;5211800
+169;1151;Novo Gama;5215231
+170;991;Águas Lindas de Goiás;5200258
+171;1142;Niquelândia;5214606
+172;985;Abadia de Goiás;5200050
+173;1055;Cristalina;5206206
+174;1080;Goianira;5208806
+175;1049;Cidade Ocidental;5205497
+176;1156;Padre Bernardo;5215603
+177;1002;Anicuns;5201306
+178;1162;Paranaiguara;5216304
+179;1126;Mimoso de Goiás;5213053
+180;1225;Valparaíso de Goiás;5221858
+181;1170;Pires do Rio;5217401
+182;1197;Santo Antônio do Descoberto;5219753
+183;1173;Porangatu;5218003
+184;1204;São Miguel do Araguaia;5220207
+185;1131;Montes Claros de Goiás;5213707
+186;1011;Aruanã;5202502
+187;1132;Montividiu;5213756
+188;1016;Bela Vista de Goiás;5203302
+189;1009;Araguapaz;5202155
+190;987;Acreúna;5200134
+191;1003;Aparecida de Goiânia;5201405
+192;1032;Caldas Novas;5204508
+193;1043;Catalão;5205109
+194;1084;Guapó;5209200
+195;1099;Itaberaí;5210406
+196;1027;Cachoeira Alta;5204102
+197;1097;Iporá;5210208
+198;1176;Posse;5218300
+199;1217;Trindade;5221403
+200;1181;Rio Quente;5218789
+201;1039;Campos Belos;5204904
+202;1122;Mara Rosa;5212808
+203;1082;Goiatuba;5209101
+204;1029;Cachoeira Dourada;5204250
+205;996;Alvorada do Norte;5200803
+206;1081;Goiás;5208905
+207;1222;Uruaçu;5221601
+208;1215;Terezópolis de Goiás;5221197
+209;1184;Sanclerlândia;5219001
+210;1022;Britânia;5203807
+211;1171;Planaltina;5217609
+212;986;Abadiânia;5200100
+213;1210;Silvânia;5220603
+214;1127;Minaçu;5213087
+215;1000;Anápolis;5201108
+216;1073;Formosa;5208004
+217;1031;Caiapônia;5204409
+218;1054;Corumbaíba;5205901
+219;1134;Morrinhos;5213806
+220;1094;Inhumas;5210000
+221;1105;Itapuranga;5211206
+222;1183;Rubiataba;5218904
+223;1116;Jussara;5212204
+224;1107;Itauçu;5211404
+225;1030;Caçu;5204300
+226;1078;Goianésia;5208608
+227;1182;Rio Verde;5218805
+228;1167;Piracanjuba;5217104
+229;1158;Palmeiras de Goiás;5215702
+230;1172;Pontalina;5217708
+231;1067;Edéia;5207402
+232;1079;Goiânia;5208707
+233;1018;Bom Jesus de Goiás;5203500
+234;1178;Quirinópolis;5218508
+235;1115;Joviânia;5212105
+236;1046;Ceres;5205406
+237;1004;Aparecida do Rio Doce;5201454
+238;1117;Lagoa Santa;5212253
+239;1112;Jataí;5211909
+240;1163;Paraúna;5216403
+241;1188;Santa Helena de Goiás;5219308
+242;1201;São João da Paraúna;5220058
+243;1108;Itumbiara;5211503
+244;1128;Mineiros;5213103
+245;1048;Chapadão do Céu;5205471
+246;1006;Araçu;5201603

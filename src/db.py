@@ -71,13 +71,21 @@ def obter_desempenho_municipios() -> pd.DataFrame:
 
 @st.cache_data(ttl=600) 
 def obter_ranking_melhorias() -> pd.DataFrame:
-    df = query_to_df(QUERY_VIEW_RANKING_MELHORIAS)
-    return df
+    try:
+        df = query_to_df(QUERY_VIEW_RANKING_MELHORIAS)
+        return df
+    except Exception as e:
+        df = pd.read_csv("dados/ranking_melhorias.csv")
+        return df 
 
 @st.cache_data(ttl=600) 
 def obter_ranking_novas_obras() -> pd.DataFrame:
-    df = query_to_df(QUERY_VIEW_RANKING_NOVAS_OBRAS)
-    return df
+    try:
+        df = query_to_df(QUERY_VIEW_RANKING_NOVAS_OBRAS)
+        return df
+    except Exception as e:
+        df = pd.read_csv("dados/ranking_novas_obras.csv")
+        return df 
 
 @st.cache_data(ttl=600) 
 def obter_municipios() -> pd.DataFrame:
