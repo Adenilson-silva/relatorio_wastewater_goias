@@ -41,13 +41,14 @@ def query_to_df(sql: str) -> pd.DataFrame:
     except Exception as e:
         # Exibe erro no Streamlit
         st.error(f"Não foi possível recuperar os dados do Azure")
-        st.error(f"Erro ao executar a query: {e}")
+        #st.error(f"Erro ao executar a query: {e}")
         
         # Opcional: log no terminal
-        print(f"[ERRO] Falha no query_to_df: {e}")
+        #print(f"[ERRO] Falha no query_to_df: {e}")
 
         # Retorna um DataFrame vazio para evitar quebra no app
         #return pd.DataFrame()
+        raise  
 
 
 @st.cache_data(ttl=600) 
@@ -55,7 +56,7 @@ def obter_volumes_anuais_goias() -> pd.DataFrame:
     try:
         df = query_to_df(QUERY_VIEW_VOLUME_ANUAL_GOIAS)
         return df
-    except Exception as e:
+    except:
         df = pd.read_csv("dados/volumes_anuais_goias.csv")
         return df 
 
@@ -65,7 +66,7 @@ def obter_desempenho_municipios() -> pd.DataFrame:
     try:
         df = query_to_df(QUERY_VIEW_DESEMPENHO)
         return df
-    except Exception as e:
+    except:
         df = pd.read_csv("dados/desempenho_municipios.csv")
         return df 
 
@@ -74,7 +75,7 @@ def obter_ranking_melhorias() -> pd.DataFrame:
     try:
         df = query_to_df(QUERY_VIEW_RANKING_MELHORIAS)
         return df
-    except Exception as e:
+    except:
         df = pd.read_csv("dados/ranking_melhorias.csv")
         return df 
 
@@ -83,14 +84,19 @@ def obter_ranking_novas_obras() -> pd.DataFrame:
     try:
         df = query_to_df(QUERY_VIEW_RANKING_NOVAS_OBRAS)
         return df
-    except Exception as e:
+    except:
         df = pd.read_csv("dados/ranking_novas_obras.csv")
         return df 
 
 @st.cache_data(ttl=600) 
 def obter_municipios() -> pd.DataFrame:
-    df = query_to_df(QUERY_MUNICIPIOS)
-    return df
+    try:
+        df = query_to_df(QUERY_MUNICIPIOS)
+        return df
+    except:
+        df = pd.read_csv("dados/municipios.csv")
+        return df 
+        
 
 @st.cache_data(ttl=600) 
 def obter_volumes_anuais_municipios() -> pd.DataFrame:
