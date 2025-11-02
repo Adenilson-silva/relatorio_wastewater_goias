@@ -61,19 +61,19 @@ def criar_cards(cards, n_colunas):
             )
 
 def formatar_numero_inteiro(numero):
-    numero_formatado = f"{numero:,.0f}".replace(",", "X").replace(".", ",").replace("X", ".")
+    numero_formatado = f"{numero:,.0f}".replace(',', 'X').replace('.', ',').replace('X', '.')
     return numero_formatado
 
 def formatar_numero_decimal(numero, casas=2):
     formato = f"{{:,.{casas}f}}"   
     numero_formatado = formato.format(numero)
-    numero_formatado = numero_formatado.replace(",", "X").replace(".", ",").replace("X", ".")
+    numero_formatado = numero_formatado.replace(',', 'X').replace('.', ',').replace('X', '.')
     return numero_formatado
 
 def formatar_numero_percentual(numero, casas=2):
     formato = f"{{:,.{casas}f}}"  
     numero_formatado = formato.format(numero*100)
-    numero_formatado = f"{numero_formatado.replace(",", "X").replace(".", ",").replace("X", ".")}%"
+    numero_formatado = f"{numero_formatado.replace(',', 'X').replace('.', ',').replace('X', '.')}%"
     return numero_formatado
 
 

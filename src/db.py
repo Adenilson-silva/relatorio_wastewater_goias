@@ -21,7 +21,7 @@ import os
 #database = "nome_banco"
 #port = 5432
 
-@st.cache_resource
+#@st.cache_resource
 def get_engine():
     user_azure = st.secrets["DB_USER"]#os.getenv("DB_USER")
     password_azure = st.secrets["DB_PASSWORD"]#os.getenv("DB_PASSWORD")
@@ -31,7 +31,7 @@ def get_engine():
     azure_engine = create_engine(f'postgresql://{user_azure}:{password_azure}@{host_azure}:{port_azure}/{dbname_azure}')
     return azure_engine
 
-@st.cache_data(ttl=600)
+#@st.cache_data(ttl=600)
 def query_to_df(sql: str) -> pd.DataFrame:
     try:
         engine = get_engine()
@@ -51,48 +51,48 @@ def query_to_df(sql: str) -> pd.DataFrame:
         raise  
 
 
-@st.cache_data(ttl=600) 
+#@st.cache_data(ttl=600) 
 def obter_volumes_anuais_goias() -> pd.DataFrame:
-    # df = query_to_df(QUERY_VIEW_VOLUME_ANUAL_GOIAS)
+    #df = query_to_df(QUERY_VIEW_VOLUME_ANUAL_GOIAS)
     # return df
-    df = pd.read_csv("dados/volumes_anuais_goias.csv", sep=';')
+    df = pd.read_csv("data/volumes_anuais_goias.csv", sep=';')
     return df 
 
 
-@st.cache_data(ttl=600) 
+#@st.cache_data(ttl=600) 
 def obter_desempenho_municipios() -> pd.DataFrame:
     #df = query_to_df(QUERY_VIEW_DESEMPENHO)
     #return df
-    df = pd.read_csv("dados/desempenho_municipios.csv", sep=';')
+    df = pd.read_csv("data/desempenho_municipios.csv", sep=';')
     return df 
 
-@st.cache_data(ttl=600) 
+#@st.cache_data(ttl=600) 
 def obter_ranking_melhorias() -> pd.DataFrame:
     #df = query_to_df(QUERY_VIEW_RANKING_MELHORIAS)
     #return df
-    df = pd.read_csv("dados/ranking_melhorias.csv", sep=';')
+    df = pd.read_csv("data/ranking_melhorias.csv", sep=';')
     return df 
 
-@st.cache_data(ttl=600) 
+#@st.cache_data(ttl=600) 
 def obter_ranking_novas_obras() -> pd.DataFrame:
     #df = query_to_df(QUERY_VIEW_RANKING_NOVAS_OBRAS)
     #return df
-    df = pd.read_csv("dados/ranking_novas_obras.csv", sep=';')
+    df = pd.read_csv("data/ranking_novas_obras.csv", sep=';')
     return df 
 
-@st.cache_data(ttl=600) 
+#@st.cache_data(ttl=600) 
 def obter_municipios() -> pd.DataFrame:
     #df = query_to_df(QUERY_MUNICIPIOS)
     #return df
-    df = pd.read_csv("dados/municipios.csv", sep=';')
+    df = pd.read_csv("data/municipios.csv", sep=';')
     return df 
         
 
-@st.cache_data(ttl=600) 
+#@st.cache_data(ttl=600) 
 def obter_volumes_anuais_municipios() -> pd.DataFrame:
     #df = query_to_df(QUERY_VOLUME_ANUAL_ESGOTO)
     #return df
-    df = pd.read_csv("dados/volumes_anuais_municipios.csv", sep=';')
+    df = pd.read_csv("data/volumes_anuais_municipios.csv", sep=';')
     return df 
 
 

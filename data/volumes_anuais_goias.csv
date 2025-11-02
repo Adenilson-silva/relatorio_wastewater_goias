@@ -1,4 +1,4 @@
-populacao_total_urbana;volume_produzido_m3;volume_coletado_m3;volume_tratado_m3;ano_referencia;relacao_tratado_produzido;relacao_coletado_produzido;relacao_tratado_coletado
+População ubana total;Volume produzido (1000 m³);Volume coletado (1000 m³);Volume tratado (1000 m³);Ano;Relação tratado/produzido;Relação coletado/produzido;Relação tratado/coletado
 5277325;250409.12;105148.41;84020.19;2008;0.33553165;0.41990644;0.79906285
 3828914;181681.95;0.0;0.0;1994;0.0;0.0;0.0
 5420323;257194.33;120749.766;100797.83;2010;0.39191312;0.46948844;0.83476627
