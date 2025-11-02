@@ -24,6 +24,7 @@ def carregar_municipios_goias_para_mapa() -> gpd.GeoDataFrame:
     df_ranking_melhorias = obter_ranking_melhorias()
     df_ranking_novas_obras = obter_ranking_novas_obras()
     gdf = carregar_municipios_goias()
+    gdf["CD_MUN"] = gdf["CD_MUN"].astype(int)
     gdf = gdf.merge(df_ranking_melhorias, left_on="CD_MUN", right_on="Código IBGE").\
     drop(columns=["Código IBGE", "id_municipio","Nome do município"]).\
     rename(columns={"Posição":"Ranking Melhorias"})
