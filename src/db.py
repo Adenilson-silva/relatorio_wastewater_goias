@@ -57,7 +57,7 @@ def obter_volumes_anuais_goias() -> pd.DataFrame:
         df = query_to_df(QUERY_VIEW_VOLUME_ANUAL_GOIAS)
         return df
     except:
-        df = pd.read_csv("dados/volumes_anuais_goias.csv")
+        df = pd.read_csv("dados/volumes_anuais_goias.csv", sep=';')
         return df 
 
 
@@ -67,7 +67,7 @@ def obter_desempenho_municipios() -> pd.DataFrame:
         df = query_to_df(QUERY_VIEW_DESEMPENHO)
         return df
     except:
-        df = pd.read_csv("dados/desempenho_municipios.csv")
+        df = pd.read_csv("dados/desempenho_municipios.csv", sep=';')
         return df 
 
 @st.cache_data(ttl=600) 
@@ -76,7 +76,7 @@ def obter_ranking_melhorias() -> pd.DataFrame:
         df = query_to_df(QUERY_VIEW_RANKING_MELHORIAS)
         return df
     except:
-        df = pd.read_csv("dados/ranking_melhorias.csv")
+        df = pd.read_csv("dados/ranking_melhorias.csv", sep=';')
         return df 
 
 @st.cache_data(ttl=600) 
@@ -85,7 +85,7 @@ def obter_ranking_novas_obras() -> pd.DataFrame:
         df = query_to_df(QUERY_VIEW_RANKING_NOVAS_OBRAS)
         return df
     except:
-        df = pd.read_csv("dados/ranking_novas_obras.csv")
+        df = pd.read_csv("dados/ranking_novas_obras.csv", sep=';')
         return df 
 
 @st.cache_data(ttl=600) 
@@ -94,7 +94,7 @@ def obter_municipios() -> pd.DataFrame:
         df = query_to_df(QUERY_MUNICIPIOS)
         return df
     except:
-        df = pd.read_csv("dados/municipios.csv")
+        df = pd.read_csv("dados/municipios.csv", sep=';')
         return df 
         
 
@@ -104,7 +104,7 @@ def obter_volumes_anuais_municipios() -> pd.DataFrame:
         df = query_to_df(QUERY_VOLUME_ANUAL_ESGOTO)
         return df
     except:
-        df = pd.read_csv("dados/volumes_anuais_municipios.csv")
+        df = pd.read_csv("dados/volumes_anuais_municipios.csv", sep=';')
         return df 
 
 
