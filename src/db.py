@@ -100,7 +100,11 @@ def obter_municipios() -> pd.DataFrame:
 
 @st.cache_data(ttl=600) 
 def obter_volumes_anuais_municipios() -> pd.DataFrame:
-    df = query_to_df(QUERY_VOLUME_ANUAL_ESGOTO)
-    return df
+    try:
+        df = query_to_df(QUERY_VOLUME_ANUAL_ESGOTO)
+        return df
+    except:
+        df = pd.read_csv("dados/volumes_anuais_municipios.csv")
+        return df 
 
 
